@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300&display=swap');
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    background: url(./images/reservationBackground.jpg) repeat;
+    background-size: 500px 300px;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #79787e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 50px 10px 0px;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav .navlink a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+nav .navlink a:hover {
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    /*horizontal-vertical offset, blur effect, color */
+    width: 50%;
+    margin: 110px auto 50px;
+    padding: 30px 40px;
+}
+
+.form h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-family: 'Italiana', serif;
+    font-size: 28pt;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.form-control label {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(27, 26, 26);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    border-color: #777;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #ffff;
+    display: block;
+    width: 100%;
+    margin: 15px 10px 0px;
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Italiana', sans-serif;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.5pt;
+    color: #fff;
+    background-color: rgba(143, 137, 137,1);
+}
+
+footer .address, .Hours {
+    flex: 40%;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+}
+
+footer .socMedia {
+    flex: 100%;
+    text-align: center;
+    margin: 20px 10px 5px 10px;
+}
+
+footer .fa {
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}

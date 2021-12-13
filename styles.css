@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300&display=swap');
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    background-color: #79787e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 50px 10px 0px;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav .navlink a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+nav .navlink a:hover {
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+#landing {
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Italiana', serif;
+    background-image: url("./images/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+#landing div {
+    color: #fffffffa;
+    font-size: 32pt;
+    padding-top: 120px;
+    padding-left: 30px;
+}
+
+#landing div #viewMenu {
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.701);
+    margin-left: 30px;
+}
+
+#landing div #viewMenu:hover {
+    color: rgba(255, 255, 255, 0.375);
+}
+
+.reservation {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    background-color: #4f4c5e;
+    padding: 10px 30px 10px 30px;
+    border: #fff 2px solid;
+    border-radius: 25px;
+}
+
+.reservation:hover {
+    background-color: white;
+    color: #4f4c5e;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+#chef {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chefDescribe {
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px;
+    width: 400px;
+    height: 330px;
+    background-color: #ebe8e568;
+}
+
+.chefTitle {
+    color: rgb(169, 159, 159);
+    ;
+}
+
+.chefName {
+    font-family: 'Italiana', serif;
+    font-size: 25pt;
+    margin-bottom: 15px;
+}
+
+#awards {
+    margin: 60px 10px 30px 10px;
+    padding: 50px;
+    background-color: #3f373a9c;
+    color: #fff;
+    font-family: 'Italiana', serif;
+    font-size: 20pt;
+    line-height: 40px;
+}
+
+#recommendDish h3 {
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 30pt;
+}
+
+#recommendDish h3:hover {
+    color: rgba(0, 0, 0, 0.395);
+    text-decoration: underline;
+}
+
+#recommendDish div {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.describeDish {
+    border: #3f373a9c 2px dotted;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+}
+
+.describeDish:hover {
+    transform: scale(1.1);
+}
+
+.describeDish p {
+    font-family: 'Italiana', serif;
+    font-size: 25pt;
+    height: 0px;
+    margin-bottom: 70px;
+}
+
+.describeDish small {
+    font-family: 'Roboto', sans-serif;
+}
+
+.describeDish img {
+    width: 190px;
+    height: 130px;
+}
+
+#reservation {
+    font-family: 'Italiana', serif;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* This section is for about.html styling */
+
+#dinningIntro {
+    margin: 100px 100px 60px;
+    text-align: center;
+    display: grid;
+}
+
+#dinningIntro h1, h2 {
+    font-family: 'Italiana', serif;
+}
+
+#dinningIntro p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#staffIntro {
+    margin: 60px 80px 80px;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas: "headchef headchef headchef headchef" "staff1 staff2 staff3 staff4";
+}
+
+@media only screen and (max-width:800px) {
+    #staffIntro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 1fr 1fr;
+        grid-template-areas: "headchef headchef" "staff1 staff2" "staff3 staff4";
+    }
+}
+
+#staffIntro .staffMember {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#staffIntro>#headchef {
+    grid-area: headchef;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#staffIntro img {
+    height: 60px;
+    width: 60px;
+    margin-left: 40%;
+}
+
+#staffIntro p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#staff1 {
+    grid-area: staff1;
+}
+
+#staff2 {
+    grid-area: staff2;
+}
+
+#staff3 {
+    grid-area: staff3;
+}
+
+#staff4 {
+    grid-area: staff4;
+}
+
+/* ************************************** */
+
+/* This part is for the styling of menu.html */
+
+.menuWrap {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.menuWrap::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: url(./images/MenuBackground.jpg);
+    background-size: contain;
+}
+
+.menuWrap h1,p,#menu {
+    position: relative
+}
+
+#menu {
+    margin: 20px 0px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#menu>.menuList {
+    margin: 30px;
+}
+
+#menu .menuList table tr:nth-child(odd) {
+    background-color: #3f373a46;
+}
+
+.menuList td{
+    font-weight: 600;
+}
+
+/* ***************************************** */
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.5pt;
+    color: #fff;
+    background-color: #3f373a9c;
+}
+
+footer .address, .Hours {
+    flex: 40%;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+}
+
+footer .socMedia {
+    flex: 100%;
+    text-align: center;
+    margin: 20px 10px 5px 10px;
+}
+
+footer .fa {
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}
